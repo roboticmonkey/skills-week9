@@ -1,0 +1,73 @@
+start time 12:45pm - break 1pm, start: 1:16pm end 1:50pm
+
+recursion
+
+1. resursion is when you use a function to call itself instead of using in
+    a loop. for a recursive function to work you need to have a base case,
+    ie. a point where the calling of the function stops. and a way to make 
+    progress to the base case. with out those two things you will call the
+    function until you overflow the call stack.
+
+2.  it is neccessary to have a base case so the function does not end up
+    calling itself forever, or until it crashes the program.
+
+Graphs:
+
+1. A graph is data structure where there are nodes and edges. edges connect one
+    node to another node. graphs are not directional and can have loops, where
+    more than one node can point to another node.
+
+2. A tree is a type of graph, but not all graphs are trees. Trees are 
+    hierarcheal or directional and they can not have loops.
+
+3. Graphs are good at modeling relationships. ie. people you know and the people
+    they know or the food chain.
+
+Performance of Different data structures:
+
+data structures     index   search  add-r   add-l   pop l   pop-r
+
+python list(array)  o(1)    o(n)    o(1)    o(n)    o(n)    o(1)
+linked list         o(n)    o(n)    o(1)    o(1)    o(1)    o(n)
+doubly-linked list  o(n)    o(n)    o(1)    o(1)    o(1)    o(1)
+queue (as array)    x       x       o(1)    x       o(n)    x   
+queue (ll or dll)   x       x       o(1)     x      o(1)    x
+stack(array, ll, dll)   x   x       o(1)    x       x       o(1)
+deque(as dll)       x       x       o(1)    o(1)    o(1)    o(1)
+
+data structures     get     add     delete  iterate memory
+
+dictionary(hash map) o(1)   o(1)    o(1)    o(n)    med
+set(hash map)       o(1)    o(1)    o(1)    o(n)    med
+binary search tree  o(logn) o(n)    o(n)    o(1)    small
+tree                o(n)    o(1)    o(1)    o(1)    small
+
+sorting:
+
+1. bubble sort: you loop through the list moving the largest number all
+    the way to the right. you keep looping through until the whole list is
+    sorted.
+
+2. merge sort: you recursivly break the list in half repeditally until you 
+    just have a list of 1 item. then on the way back up you compair the lists
+    and "slowly" build up a new sorted list.
+
+3. quick sort: in quick sort you randomly pick a "pivit" which is a point in
+    the list where you compare the other numbers to. You move all the numbers
+    that are lower then the pivit to the left and the ones to the right that are 
+    higher then the pivit. you have to keep track of 3 things. where the pivit
+    will be placed after you go through the list and how far you have gotten in the list. that way once you have gone through the list you will know where the 
+    rightful place of the pivit belongs.
+
+git branching:
+
+1. git branching is great when you want to start a new feature, but you do not 
+    want to break the code that has been pushed to master.
+
+2. a pull request is a git hub thing. it is where someone is requesting that you
+    look at the code they have writted and merge it to your code. or merge it 
+    to the master.
+
+
+
+
